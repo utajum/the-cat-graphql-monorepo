@@ -1,0 +1,19 @@
+{
+  "name": "propeller",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "pnpm run --parallel -r start",
+    "clean": "git clean -fdx node_modules/ packages/*/node_modules client/*/build",
+    "docker-up": "docker-compose -f ./docker/dev.yml up -d",
+    "docker-down": "docker-compose -f ./docker/dev.yml down",
+    "docker-logs": "docker-compose -f ./docker/dev.yml logs --follow"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^2.8.4"
+  }
+}

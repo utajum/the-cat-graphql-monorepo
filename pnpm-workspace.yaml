@@ -1,0 +1,5 @@
+packages:
+  # fe projects
+  - "clients/*"
+  # other packages
+  - "packages/*"
